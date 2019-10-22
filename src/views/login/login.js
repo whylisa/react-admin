@@ -8,6 +8,7 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd';
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+				this.props.history.push('/home')
       }
     });
   };
